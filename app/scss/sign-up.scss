@@ -1,0 +1,66 @@
+@import "variables.scss";
+@import "mixins.scss";
+
+.container {
+    .row {
+        .col-left-position {
+            padding-right: 0;
+            .bg-side-img {
+                background-image: url('../img/sign-up-step2.png');
+                background-repeat: no-repeat;
+                background-attachment: scroll;
+                background-position: center center;
+                min-height: 980px;                
+                > img {
+                    margin-top: 100px;
+                }
+                .intro-text-sidebar-left {
+                    @include sans-serif-font;
+                    color: #fff;
+                    padding: 35px;
+                }
+            }
+        }
+        
+        .form-bg, .form-msg-done {
+            background: #eeeeee;
+            min-height: 980px;
+            padding-left: 40px;
+            padding-right: 40px;
+            .row-title {
+                padding-left: 40px;
+                padding-top: 50px;
+            }
+            .sign-up-form-personal, .sign-up-form-company {
+                width: 100%;
+                position: relative;
+                @include sans-serif-font;
+                display: none;
+            }
+            > input[name="agreed"] {
+                margin-left: 30px;
+            }
+            .btn-sign-up-edit {
+                margin-right: 40px;
+            }
+        }
+        .form-msg-done {
+            display: none;
+            padding-top: 100px;
+            .personal-msg, .company-msg {
+                display: none;
+            }
+        }
+    }
+}
+.sign-up-step2 {
+    padding-top: 30px;
+    display: none;
+}
+
+.alert-show {
+    position: absolute;
+    top: 210px;
+    right: 0;
+    display: none;
+}
