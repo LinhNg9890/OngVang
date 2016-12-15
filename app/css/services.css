@@ -62,3 +62,8 @@
       .container .panel-full .tab-content .price-table-body .price .list-price {
         list-style: none;
         font-weight: 700; }
+  @media screen and (max-width: 500px) {
+    .container .panel-full {
+      right: 0; }
+      .container .panel-full .tab-content .price-table-header > th {
+        white-space: normal; } }

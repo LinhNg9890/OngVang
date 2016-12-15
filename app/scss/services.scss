@@ -84,5 +84,15 @@
 				}
 			}
 		}
+		@media screen and (max-width: 500px) {
+			right: 0;
+			.tab-content {
+				.price-table-header {
+					> th {
+						white-space: normal;
+					}
+				}
+			}
+		}
 	}
 }
