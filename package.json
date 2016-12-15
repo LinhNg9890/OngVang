@@ -11,6 +11,7 @@
   "devDependencies": {
     "bootstrap": "^3.3.7",
     "bootstrap-datetimepicker": "0.0.7",
+    "bootstrap-vertical-tabs": "^1.2.2",
     "browser-sync": "^2.13.0",
     "flat-color-icons": "^1.0.0",
     "font-awesome": "^4.6.3",

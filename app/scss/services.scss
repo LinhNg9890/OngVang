@@ -1,0 +1,88 @@
+@import "variables.scss";
+@import "mixins.scss";
+
+.section-service {
+	padding-top: 30px;
+	@include sans-serif-font;
+}
+
+.container {
+	.tab-left-border {
+		border: 1px solid #eee;
+		.ul-title {
+			margin-left: -15px;
+			height: 40px;
+			vertical-align: middle;
+			padding: 12px;
+			border-left: 5px solid $theme-primary;
+			> span {
+				padding-left: 5px;
+			}
+		}
+		.nav-tabs-edit {
+			border: none;
+			> li {
+				float: none;
+				// border: 1px solid #ccc;
+				&.active {
+					> a {
+						background: $gray-base;
+						color: $theme-primary;
+					}
+				}
+				> a {
+					color: #333;
+					border-left: none;
+					border-right: none;
+					border-bottom: none;
+					border-top: 1px solid #ccc;
+					border-radius: 0;
+					&:hover {
+						background: #eee;
+						color: $theme-primary;
+					}
+					&:active, &:focus {
+						background: $gray-base;
+						color: $theme-primary;
+					}
+				}
+				&:last-child {
+					padding-bottom: 20px;
+				}
+			}
+		}
+	}
+	.panel-full {
+		padding-right: 0px;
+    	right: -15px;
+		.tab-content {
+			.fa-check {
+				color: #32ce21;
+			}
+			.fa-exclamation {
+				color: $theme-primary
+			}
+			.fa-times {
+				color: red;
+			}
+			.price-table-header {
+				background: #818181;
+				color: #fff;
+				> th {
+					white-space: nowrap;
+				}
+			}
+			.price-table-body {
+				background: $gray-base;
+				color: $theme-primary;
+				.price {
+					padding-left: 0;
+					.list-price {
+						list-style: none;
+						font-weight: 700;
+					}
+				}
+			}
+		}
+	}
+}

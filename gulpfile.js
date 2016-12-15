@@ -66,6 +66,9 @@ gulp.task('copy', function() {
     gulp.src(['node_modules/bootstrap/dist/**/*', '!**/npm.js', '!**/bootstrap-theme.*', '!**/*.map'])
         .pipe(gulp.dest('app/vendor/bootstrap'))
 
+    gulp.src(['node_modules/bootstrap-vertical-tabs/**/*', '!**/*.npmignore', '!**/*.md', '!**/*.json'])
+        .pipe(gulp.dest('app/vendor/bootstrap-vertical-tabs'))
+
     gulp.src(['node_modules/bootstrap-datetimepicker/src/**/*', '!**/*.npmignore', '!**/*.lvimrc', '!**/*.md', '!**/*.json'])
         .pipe(gulp.dest('app/vendor/bootstrap-datetimepicker'))
 
