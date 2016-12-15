@@ -1,4 +1,6 @@
-# OngVang
+# OngVang 12/2016
+
+# Creator: Linh Nguyen (email: nguyenlinh9890@gmail.com)
 
 # Environment
 * node package management (NPM)
