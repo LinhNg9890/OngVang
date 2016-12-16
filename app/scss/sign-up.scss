@@ -15,9 +15,13 @@
                     margin-top: 100px;
                 }
                 .intro-text-sidebar-left {
-                    @include sans-serif-font;
+                    font-family: Brandon Regular;
                     color: #fff;
                     padding: 35px;
+                    padding-top: 10px;
+                    > p {
+                        font-size: 15px;
+                    }
                 }
             }
         }
@@ -29,20 +33,23 @@
             padding-right: 40px;
             .row-title {
                 padding-left: 40px;
-                padding-top: 50px;
+                padding-top: 10px;
             }
             .sign-up-form-personal, .sign-up-form-company {
                 width: 100%;
                 position: relative;
-                @include sans-serif-font;
+                font-family: Brandon Regular;
                 display: none;
             }
-            > input[name="agreed"] {
-                margin-left: 30px;
+            .btn-bottom {
+                .agreed-check {
+                    margin-left: 30px;
+                }
+                .btn-sign-up-edit {
+                    margin-right: 30px;
+                }
             }
-            .btn-sign-up-edit {
-                margin-right: 40px;
-            }
+            
         }
         .form-msg-done {
             display: none;
@@ -54,13 +61,15 @@
     }
 }
 .sign-up-step2 {
-    padding-top: 30px;
+    padding-top: 10px;
+    padding-bottom: 0px;
     display: none;
 }
 
 .alert-show {
-    position: absolute;
-    top: 210px;
-    right: 0;
+    position: relative;
+    top: 10px;
+    // right: 0;
     display: none;
+    font-size: 16px;
 }

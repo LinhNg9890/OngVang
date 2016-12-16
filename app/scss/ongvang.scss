@@ -5,7 +5,7 @@
 
 body {
     overflow-x: hidden;
-    @include body-font;
+    font-family: Brandon Regular;
 }
 
 .text-muted {
@@ -46,7 +46,7 @@ a.active {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    @include serif-font;
+    font-family: Brandon Regular;
     font-weight: 700;
 }
 
@@ -65,13 +65,14 @@ h1, h2, h3, h4, h5, h6 {
 // Restyled Primary Buttons
 .btn-primary {
     // @include button-variant(white, $theme-primary, $theme-primary);
-    @include sans-serif-font;
-    font-weight: 600;
+    font-family: Brandon Bold;
+    font-weight: 700;
+    font-size: 18px;
 }
 
 .btn-xl {
     // @include button-variant(white, $theme-primary, $theme-primary);
-    @include sans-serif-font;
+    font-family: Brandon Bold;
     font-weight: 700;
     border-radius: 3px;
     font-size: 18px;
@@ -90,32 +91,10 @@ h1, h2, h3, h4, h5, h6 {
         border: 1px solid $theme-primary;
         background: rgba(254, 209, 54, 0.9);
     } 
-    // .apple {
-    //     color: grey;
-    //     position: absolute;
-    //     left: 3px;
-    //     top: 13px;
-    //     font-size: 40px;
-    // }
-    .text-ios {
-        @include sans-serif-font;
-        color: $gray-darker;
-        font-size: 12px;
-        position: absolute;
-        left: 10px;
-        top: 13px;
-    }
-    .text-app {
-        @include sans-serif-font;
-        color: $gray-darker;
-        font-size: 16px;
-        position: absolute;
-        left: 10px;
-        top: 30px;
-    }
 }
 
 .btn-sign-up {
+    font-family: Brandon Regular;
     background: rgba(0, 0, 0, 0.3);
     position: relative;
     color: #fff;
@@ -129,29 +108,6 @@ h1, h2, h3, h4, h5, h6 {
         border: 1px solid #fff;
         background: rgba(0, 0, 0, 0.7);
     }
-    // .android {
-    //     color: #fff;
-    //     position: absolute;
-    //     left: 3px;
-    //     top: 13px;
-    //     font-size: 40px;
-    // }
-    .text-android {
-        @include sans-serif-font;
-        color: #fff;
-        font-size: 12px;
-        position: absolute;
-        left: 15px;
-        top: 13px;
-    }
-    .text-play {
-        @include sans-serif-font;
-        color: #fff;
-        font-size: 16px;
-        position: absolute;
-        left: 15px;
-        top: 30px;
-    }
 }
 
 // Custom Navigation Bar
@@ -161,7 +117,7 @@ h1, h2, h3, h4, h5, h6 {
     border-color: transparent;
     .navbar-brand {
         color: $theme-primary;
-        @include script-font;
+        font-family: Brandon Regular;
         &:hover,
         &:focus,
         &:active,
@@ -175,7 +131,7 @@ h1, h2, h3, h4, h5, h6 {
     .navbar-toggle {
         background-color: $theme-primary;
         border-color: $theme-primary;
-        @include sans-serif-font;
+        font-family: Brandon Regular;
         color: white;
         font-size: 12px;
         &:hover,
@@ -186,7 +142,8 @@ h1, h2, h3, h4, h5, h6 {
     .nav {
         li {
             a {
-                @include sans-serif-font;
+                font-family: Brandon Regular;
+                font-size: 16px;
                 font-weight: 400;
                 letter-spacing: 1px;
                 color: white;
@@ -251,26 +208,28 @@ header {
     text-align: center;
     color: white;
     .intro-text {
-        padding-top: 100px;
+        padding-top: 130px;
         padding-bottom: 50px;
         .intro-lead-in {
-            @include sans-serif-font;
+            font-family: Brandon Regular;
             // font-style: italic;
-            font-size: 22px;
-            line-height: 22px;
+            font-size: 18px;
+            line-height: 20px;
             margin-bottom: 20px;
         }
         .intro-heading {
-            @include sans-serif-font;
+            font-family: Brandon Regular;
             font-weight: 700;
-            font-size: 40px;
+            font-size: 30px;
             line-height: 40px;
             margin-bottom: 20px;
         }
     }
     > div {
-        .fa-3x {
-            padding: 10px;
+        .fa-2x {
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-bottom: 5px;
         }
     }
 }
@@ -278,21 +237,21 @@ header {
 @media(min-width:768px) {
     header {
         .intro-text {
-            padding-top: 300px;
-            padding-bottom: 230px;
+            padding-top: 130px;
+            padding-bottom: 170px;
             .intro-lead-in {
-                @include sans-serif-font;
+                font-family: Brandon Regular;
                 // font-style: italic;
-                font-size: 25px;
-                line-height: 40px;
-                margin-bottom: 20px;
+                font-size: 20px;
+                line-height: 20px;
+                margin-bottom: 10px;
             }
             .intro-heading {
-                @include sans-serif-font;
+                font-family: Brandon Regular;
                 font-weight: 700;
-                font-size: 40px;
+                font-size: 30px;
                 line-height: 40px;
-                margin-bottom: 20px;
+                margin-bottom: 10px;
             }
         }
     }
@@ -303,8 +262,8 @@ header {
 section {
     padding: 100px 0;
     h2.section-heading {
-        @include sans-serif-font;
-        font-size: 35px;
+        font-family: Brandon Regular;
+        font-size: 30px;
         margin-top: 0;
         margin-bottom: 15px;
         text-transform: none;
@@ -335,18 +294,25 @@ section {
 // Services Section
 
 .service-heading {
-    @include serif-font;
+    font-family: Brandon Regular;
     margin: 15px 0;
     text-transform: none;
+    > p {
+        font-family: Brandon Regular;
+        font-size: 16px;
+    }
 }
 
 // choice Section
 
 #choice {
     .choice-item {
-        @include sans-serif-font;
+        font-family: Brandon Regular;        
         margin: 0 0 15px;
         right: 0;
+        > p {
+            font-size: 16px;
+        }
     }
     * {
         z-index: 2;
@@ -584,12 +550,16 @@ aside.clients {
     }
 }
 
+.operation-home-page {
+    padding-top: 30px;
+}
+
 .container {
     .link-position {
         margin-top: -15px;
     }
     .row-edit {
-        padding-bottom: 30px;
+        padding-bottom: 0px;
     }
     > a {
         margin-top: 20px;
@@ -617,7 +587,7 @@ aside.clients {
     .login {
         width: 280px;
         margin: 0 auto;
-        @include sans-serif-font;
+       font-family: Brandon Regular;
         .user-name, .input-password {
             width: 100%;
             margin: 0;
@@ -635,14 +605,15 @@ aside.clients {
         }
         .input-submit {
             width: 100%;
-            font-size: 14px;
+            font-size: 16px;
             text-transform: uppercase;
             font-weight: 700;
-            margin-top: 16px;
+            margin-top: 10px;
             outline: 0;
             cursor: pointer;
             letter-spacing: 1px;
             background: $theme-primary;
+            font-family: Brandon Bold;
             &:hover {
                 transition: background-color 0.5s ease;
             }
@@ -650,9 +621,10 @@ aside.clients {
         .remember-forgot {
             float: left;
             width: 100%;
-            margin: 10px 0 0 0;
+            margin: 0;
                 > label, a {
-                font-size: 12px;
+                font-family: Brandon Regular;
+                font-size: 15px;
                 font-weight: 400;
                 color: #FFFFFF;
             }
@@ -666,7 +638,7 @@ aside.clients {
                 z-index: 111;
                 min-height: 20px;
                 margin-top: 10px;
-                margin-bottom: 10px;
+                margin-bottom: 10px;                
             }
             .sign-up {
                 z-index: 111;
@@ -674,73 +646,9 @@ aside.clients {
                 margin-top: 10px;
                 margin-bottom: 0px;
                 .text-size {
-                    font-size: 14px;
+                    font-size: 15px;
                 }
             }
-        }
-    }
-    .pr-wrap {
-        width: 100%;
-        height: 100%;
-        min-height: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: 99;
-        display: none;
-    }
-    .show-pass-reset {
-        display: block !important;
-    }
-    .pass-reset {
-        margin: 0 auto;
-        width: 250px;
-        position: relative;
-        margin-top: 34%;
-        z-index: 99;
-        background: #FFFFFF;
-        padding: 20px 15px;
-        > label {
-            color: $gray-darker;
-            font-size: 12px;
-            font-weight: 400;
-            margin-bottom: 15px;
-        }
-        > input[type="email"] {
-            width: 100%;
-            margin: 5px 0 0 0;
-            padding: 5px 10px;
-            background: 0;
-            border: 0;
-            border-bottom: 1px solid #000000;
-            outline: 0;
-            font-style: italic;
-            font-size: 12px;
-            font-weight: 400;
-            letter-spacing: 1px;
-            margin-bottom: 5px;
-            color: #000000;
-            outline: 0;
-        }
-        > .button-submit, .button-cancel {
-            // width: 40%;
-            // border: 1px solid #449D44;
-            font-size: 14px;
-            text-transform: uppercase;
-            font-weight: 500;
-            margin-top: 10px;
-            outline: 0;
-            cursor: pointer;
-            letter-spacing: 1px;
-        }
-        &:hover {
-            transition: background-color 0.5s ease;
-        }
-        .button-submit {
-            border: 1px solid #449D44;
-        }
-        .button-cancel {
-            border: 1px solid $gray-darker;
         }
     }
     @media(max-width:700px) {
@@ -752,21 +660,8 @@ aside.clients {
         .link-position {
             margin-top: -8px;
             margin-left: -12px;
-        }
-        .pass-reset {
-            margin: 330px 34px 0;
-        }
+        }        
     }
-}
-.pr-wrap {
-    width: 100%;
-    height: 100%;
-    min-height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 999;
-    display: none;
 }
 #service {
     background: #F9F9F9;
@@ -802,22 +697,22 @@ section#contact {
         box-shadow: none;
     }
     ::-webkit-input-placeholder {
-       @include sans-serif-font;
+      font-family: Brandon Regular;
        font-weight: 700;
        color: $gray-lighter;
     }
     :-moz-placeholder { /* Firefox 18- */
-       @include sans-serif-font;
+      font-family: Brandon Regular;
        font-weight: 700;
        color: $gray-lighter;
     }
     ::-moz-placeholder {  /* Firefox 19+ */
-       @include sans-serif-font;
+      font-family: Brandon Regular;
        font-weight: 700;
        color: $gray-lighter;
     }
     :-ms-input-placeholder {  
-       @include sans-serif-font;
+      font-family: Brandon Regular;
        font-weight: 700;
        color: $gray-lighter;
     }
@@ -833,13 +728,13 @@ footer {
     text-align: center;
     span.copyright {
         line-height: 40px;
-        @include sans-serif-font;
+       font-family: Brandon Regular;
         text-transform: none;
     }
     ul.quicklinks {
         margin-bottom: 0;
         line-height: 40px;
-        @include sans-serif-font;
+       font-family: Brandon Regular;
         text-transform: none;
     }
 }
@@ -902,7 +797,7 @@ ul.social-buttons {
         }
         p.item-intro {
             margin: 20px 0 30px;
-            @include serif-font;
+            font-family: Brandon Regular;
             font-style: italic;
             font-size: 16px;
         }

@@ -3,9 +3,25 @@
  * Copyright 2013-2016 Linh Nguyen
  * Licensed under  (...)
  */
+@font-face {
+  font-family: Brandon Bold;
+  src: url("../font/BrandonText-Bold.ttf"); }
+
+@font-face {
+  font-family: Brandon Bold Italic;
+  src: url("../font/BrandonText-BoldItalic.ttf"); }
+
+@font-face {
+  font-family: Brandon Regular;
+  src: url("../font/BrandonText-Regular.ttf"); }
+
+@font-face {
+  font-family: Brandon Regular Italic;
+  src: url("../font/BrandonText-RegularItalic.ttf"); }
+
 body {
   overflow-x: hidden;
-  font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  font-family: Brandon Regular; }
 
 .text-muted {
   color: #777777;
@@ -38,7 +54,7 @@ a.active {
   color: #fec503; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
+  font-family: Brandon Regular;
   font-weight: 700; }
 
 .img-centered {
@@ -51,11 +67,12 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #222222; }
 
 .btn-primary {
-  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
-  font-weight: 600; }
+  font-family: Brandon Bold;
+  font-weight: 700;
+  font-size: 18px; }
 
 .btn-xl {
-  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-family: Brandon Bold;
   font-weight: 700;
   border-radius: 3px;
   font-size: 18px;
@@ -72,22 +89,9 @@ h1, h2, h3, h4, h5, h6 {
   .btn-log-in:hover, .btn-log-in:focus {
     border: 1px solid #fed136;
     background: rgba(254, 209, 54, 0.9); }
-  .btn-log-in .text-ios {
-    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
-    color: #222222;
-    font-size: 12px;
-    position: absolute;
-    left: 10px;
-    top: 13px; }
-  .btn-log-in .text-app {
-    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
-    color: #222222;
-    font-size: 16px;
-    position: absolute;
-    left: 10px;
-    top: 30px; }
 
 .btn-sign-up {
+  font-family: Brandon Regular;
   background: rgba(0, 0, 0, 0.3);
   position: relative;
   color: #fff;
@@ -100,27 +104,13 @@ h1, h2, h3, h4, h5, h6 {
     color: #fed136;
     border: 1px solid #fff;
     background: rgba(0, 0, 0, 0.7); }
-  .btn-sign-up .text-android {
-    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
-    color: #fff;
-    font-size: 12px;
-    position: absolute;
-    left: 15px;
-    top: 13px; }
-  .btn-sign-up .text-play {
-    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
-    color: #fff;
-    font-size: 16px;
-    position: absolute;
-    left: 15px;
-    top: 30px; }
 
 .navbar-custom {
   background-color: #222222;
   border-color: transparent; }
   .navbar-custom .navbar-brand {
     color: #fed136;
-    font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive; }
+    font-family: Brandon Regular; }
     .navbar-custom .navbar-brand:hover, .navbar-custom .navbar-brand:focus, .navbar-custom .navbar-brand:active, .navbar-custom .navbar-brand.active {
       color: #fec503; }
   .navbar-custom .navbar-collapse {
@@ -128,13 +118,14 @@ h1, h2, h3, h4, h5, h6 {
   .navbar-custom .navbar-toggle {
     background-color: #fed136;
     border-color: #fed136;
-    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+    font-family: Brandon Regular;
     color: white;
     font-size: 12px; }
     .navbar-custom .navbar-toggle:hover, .navbar-custom .navbar-toggle:focus {
       background-color: #fed136; }
   .navbar-custom .nav li a {
-    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+    font-family: Brandon Regular;
+    font-size: 16px;
     font-weight: 400;
     letter-spacing: 1px;
     color: white; }
@@ -185,43 +176,45 @@ header {
   text-align: center;
   color: white; }
   header .intro-text {
-    padding-top: 100px;
+    padding-top: 130px;
     padding-bottom: 50px; }
     header .intro-text .intro-lead-in {
-      font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
-      font-size: 22px;
-      line-height: 22px;
+      font-family: Brandon Regular;
+      font-size: 18px;
+      line-height: 20px;
       margin-bottom: 20px; }
     header .intro-text .intro-heading {
-      font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+      font-family: Brandon Regular;
       font-weight: 700;
-      font-size: 40px;
+      font-size: 30px;
       line-height: 40px;
       margin-bottom: 20px; }
-  header > div .fa-3x {
-    padding: 10px; }
+  header > div .fa-2x {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 5px; }
 
 @media (min-width: 768px) {
   header .intro-text {
-    padding-top: 300px;
-    padding-bottom: 230px; }
+    padding-top: 130px;
+    padding-bottom: 170px; }
     header .intro-text .intro-lead-in {
-      font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
-      font-size: 25px;
-      line-height: 40px;
-      margin-bottom: 20px; }
+      font-family: Brandon Regular;
+      font-size: 20px;
+      line-height: 20px;
+      margin-bottom: 10px; }
     header .intro-text .intro-heading {
-      font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+      font-family: Brandon Regular;
       font-weight: 700;
-      font-size: 40px;
+      font-size: 30px;
       line-height: 40px;
-      margin-bottom: 20px; } }
+      margin-bottom: 10px; } }
 
 section {
   padding: 100px 0; }
   section h2.section-heading {
-    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
-    font-size: 35px;
+    font-family: Brandon Regular;
+    font-size: 30px;
     margin-top: 0;
     margin-bottom: 15px;
     text-transform: none; }
@@ -234,14 +227,19 @@ section {
     padding: 100px 0; } }
 
 .service-heading {
-  font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
+  font-family: Brandon Regular;
   margin: 15px 0;
   text-transform: none; }
+  .service-heading > p {
+    font-family: Brandon Regular;
+    font-size: 16px; }
 
 #choice .choice-item {
-  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-family: Brandon Regular;
   margin: 0 0 15px;
   right: 0; }
+  #choice .choice-item > p {
+    font-size: 16px; }
 
 #choice * {
   z-index: 2; }
@@ -406,11 +404,14 @@ section {
 aside.clients img {
   margin: 50px auto; }
 
+.operation-home-page {
+  padding-top: 30px; }
+
 .container .link-position {
   margin-top: -15px; }
 
 .container .row-edit {
-  padding-bottom: 30px; }
+  padding-bottom: 0px; }
 
 .container > a {
   margin-top: 20px; }
@@ -435,7 +436,7 @@ aside.clients img {
 .container .login {
   width: 280px;
   margin: 0 auto;
-  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif; }
+  font-family: Brandon Regular; }
   .container .login .user-name, .container .login .input-password {
     width: 100%;
     margin: 0;
@@ -451,22 +452,24 @@ aside.clients img {
     outline: 0; }
   .container .login .input-submit {
     width: 100%;
-    font-size: 14px;
+    font-size: 16px;
     text-transform: uppercase;
     font-weight: 700;
-    margin-top: 16px;
+    margin-top: 10px;
     outline: 0;
     cursor: pointer;
     letter-spacing: 1px;
-    background: #fed136; }
+    background: #fed136;
+    font-family: Brandon Bold; }
     .container .login .input-submit:hover {
       transition: background-color 0.5s ease; }
   .container .login .remember-forgot {
     float: left;
     width: 100%;
-    margin: 10px 0 0 0; }
+    margin: 0; }
     .container .login .remember-forgot > label, .container .login .remember-forgot a {
-      font-size: 12px;
+      font-family: Brandon Regular;
+      font-size: 15px;
       font-weight: 400;
       color: #FFFFFF; }
     .container .login .remember-forgot > a {
@@ -484,82 +487,14 @@ aside.clients img {
       margin-top: 10px;
       margin-bottom: 0px; }
       .container .login .remember-forgot .sign-up .text-size {
-        font-size: 14px; }
-
-.container .pr-wrap {
-  width: 100%;
-  height: 100%;
-  min-height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 99;
-  display: none; }
-
-.container .show-pass-reset {
-  display: block !important; }
-
-.container .pass-reset {
-  margin: 0 auto;
-  width: 250px;
-  position: relative;
-  margin-top: 34%;
-  z-index: 99;
-  background: #FFFFFF;
-  padding: 20px 15px; }
-  .container .pass-reset > label {
-    color: #222222;
-    font-size: 12px;
-    font-weight: 400;
-    margin-bottom: 15px; }
-  .container .pass-reset > input[type="email"] {
-    width: 100%;
-    margin: 5px 0 0 0;
-    padding: 5px 10px;
-    background: 0;
-    border: 0;
-    border-bottom: 1px solid #000000;
-    outline: 0;
-    font-style: italic;
-    font-size: 12px;
-    font-weight: 400;
-    letter-spacing: 1px;
-    margin-bottom: 5px;
-    color: #000000;
-    outline: 0; }
-  .container .pass-reset > .button-submit, .container .pass-reset .button-cancel {
-    font-size: 14px;
-    text-transform: uppercase;
-    font-weight: 500;
-    margin-top: 10px;
-    outline: 0;
-    cursor: pointer;
-    letter-spacing: 1px; }
-  .container .pass-reset:hover {
-    transition: background-color 0.5s ease; }
-  .container .pass-reset .button-submit {
-    border: 1px solid #449D44; }
-  .container .pass-reset .button-cancel {
-    border: 1px solid #222222; }
+        font-size: 15px; }
 
 @media (max-width: 700px) {
   .container .row > div {
     text-align: center; }
   .container .link-position {
     margin-top: -8px;
-    margin-left: -12px; }
-  .container .pass-reset {
-    margin: 330px 34px 0; } }
-
-.pr-wrap {
-  width: 100%;
-  height: 100%;
-  min-height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 999;
-  display: none; }
+    margin-left: -12px; } }
 
 #service {
   background: #F9F9F9; }
@@ -587,21 +522,21 @@ section#contact {
     border-color: #fed136;
     box-shadow: none; }
   section#contact ::-webkit-input-placeholder {
-    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+    font-family: Brandon Regular;
     font-weight: 700;
     color: #eeeeee; }
   section#contact :-moz-placeholder {
     /* Firefox 18- */
-    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+    font-family: Brandon Regular;
     font-weight: 700;
     color: #eeeeee; }
   section#contact ::-moz-placeholder {
     /* Firefox 19+ */
-    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+    font-family: Brandon Regular;
     font-weight: 700;
     color: #eeeeee; }
   section#contact :-ms-input-placeholder {
-    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+    font-family: Brandon Regular;
     font-weight: 700;
     color: #eeeeee; }
   section#contact .text-danger {
@@ -612,12 +547,12 @@ footer {
   text-align: center; }
   footer span.copyright {
     line-height: 40px;
-    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+    font-family: Brandon Regular;
     text-transform: none; }
   footer ul.quicklinks {
     margin-bottom: 0;
     line-height: 40px;
-    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+    font-family: Brandon Regular;
     text-transform: none; }
 
 ul.social-buttons {
@@ -665,7 +600,7 @@ ul.social-buttons {
     margin-bottom: 30px; }
   .choice-modal .modal-content p.item-intro {
     margin: 20px 0 30px;
-    font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
+    font-family: Brandon Regular;
     font-style: italic;
     font-size: 16px; }
   .choice-modal .modal-content ul.list-inline {

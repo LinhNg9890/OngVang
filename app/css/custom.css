@@ -3,10 +3,27 @@
  * Copyright 2013-2016 Linh Nguyen
  * Licensed under  (...)
  */
+@font-face {
+  font-family: Brandon Bold;
+  src: url("../font/BrandonText-Bold.ttf"); }
+
+@font-face {
+  font-family: Brandon Bold Italic;
+  src: url("../font/BrandonText-BoldItalic.ttf"); }
+
+@font-face {
+  font-family: Brandon Regular;
+  src: url("../font/BrandonText-Regular.ttf"); }
+
+@font-face {
+  font-family: Brandon Regular Italic;
+  src: url("../font/BrandonText-RegularItalic.ttf"); }
+
 .navbar-custom .container .navbar-edit {
   position: relative; }
   .navbar-custom .container .navbar-edit .link-logo {
-    margin-top: -25px; }
+    margin-top: -25px;
+    margin-left: -30px; }
     .navbar-custom .container .navbar-edit .link-logo .no-scroll {
       display: block; }
     .navbar-custom .container .navbar-edit .link-logo .yes-scroll {
@@ -35,7 +52,7 @@
   display: none; }
 
 .affix .container .navbar-edit .link-logo .yes-scroll {
-  margin-left: -15px;
+  margin-left: 0px;
   display: block; }
 
 .affix .container .nav-edit > li > a {
@@ -59,25 +76,33 @@ hr {
 hr.light {
   border-color: white; }
 
-.section-top, .section-top-edit {
-  padding-top: 30px; }
+.section-top-edit {
+  padding-top: 10px; }
+
+.section-top {
+  padding-top: 0; }
 
 .section-link {
+  font-family: Brandon Regular;
   padding-top: 0;
   padding-bottom: 0;
   background: #eee;
   height: 50px;
-  color: #222222; }
+  color: #222222;
+  font-size: 16px; }
 
-.section-sign-up, .section-intro {
-  padding-top: 30px; }
-  .section-sign-up .container-bg, .section-intro .container-bg {
+.section-forgot-password, .section-sign-in, .section-sign-up, .section-intro {
+  padding-top: 10px; }
+  .section-forgot-password .container-bg, .section-sign-in .container-bg, .section-sign-up .container-bg, .section-intro .container-bg {
     position: relative;
     background-image: url("../img/sign-up-bg.png");
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center center;
     min-height: 380px; }
+
+.section-forgot-password, .section-sign-in, .section-sign-up {
+  padding-bottom: 50px; }
 
 .section-top-edit {
   padding-bottom: 0; }
@@ -101,21 +126,28 @@ section .container-contact {
   padding-right: 0; }
 
 section .container {
-  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif; }
+  font-family: Brandon Regular; }
   section .container .row-link-edit {
     height: 50px;
     padding: 16px; }
     section .container .row-link-edit > a {
       color: #222222; }
-  section .container > form {
-    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  section .container .forgot {
+    display: block; }
+    section .container .forgot .email-request {
+      width: 100%;
+      color: #222222; }
+    section .container .forgot .alert-fail-show, section .container .forgot .alert-success-show {
+      display: none; }
+  section .container > form, section .container .forgot {
+    font-family: Brandon Regular;
     width: 25%;
     margin-left: 34%;
     margin-top: 10%;
     color: #fff; }
-    section .container > form .input-submit {
+    section .container > form .request-submit, section .container > form .input-submit, section .container .forgot .request-submit, section .container .forgot .input-submit {
       width: 100%;
-      font-size: 14px;
+      font-size: 16px;
       text-transform: uppercase;
       font-weight: 700;
       margin-top: 16px;
@@ -123,9 +155,16 @@ section .container {
       cursor: pointer;
       letter-spacing: 1px;
       background: #fed136; }
-      section .container > form .input-submit:hover {
+      section .container > form .request-submit:hover, section .container > form .input-submit:hover, section .container .forgot .request-submit:hover, section .container .forgot .input-submit:hover {
         transition: background-color 0.5s ease; }
-  section .container .login-edit {
+    section .container > form .request-submit, section .container .forgot .request-submit {
+      background: #5CB85C;
+      margin-bottom: 10px; }
+  section .container .request-send {
+    display: none; }
+    section .container .request-send > label {
+      color: #fff; }
+  section .container .forgot-edit, section .container .login-edit {
     margin: 60px auto; }
   section .container .pass-reset-edit {
     bottom: 180px; }
@@ -156,6 +195,14 @@ section .container {
       padding-top: 30px; }
       section .container .column-right-position .location-office > span {
         text-transform: uppercase; }
+    section .container .column-right-position .addr-comp {
+      padding-left: 25px; }
+    section .container .column-right-position .detail-info1 {
+      padding-left: 50px; }
+    section .container .column-right-position .detail-info2 {
+      padding-left: 15px; }
+    section .container .column-right-position .detail-info3 {
+      padding-left: 33px; }
   @media (max-width: 768px) {
     section .container form {
       width: 85%;
@@ -166,4 +213,7 @@ section .container {
       width: 35%; } }
 
 footer {
-  border-top: 1px solid #eeeeee; }
+  font-family: Brandon Regular;
+  border-top: 1px solid #eeeeee;
+  padding-bottom: 0;
+  padding-top: 10px; }

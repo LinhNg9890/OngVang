@@ -62,7 +62,7 @@
                         <a href="../partials/services.html">Dịch Vụ</a>
                     </li>
                     <li>
-                        <a href="../partials/introduction.html">Gới Thiệu</a>
+                        <a href="../partials/introduction.html">Giới Thiệu</a>
                     </li>
                     <li>
                         <a href="#">FAQ</a>
@@ -101,6 +101,10 @@
                         <option>Doanh Nghiệp</option>
                     </select>
                     <a href="#" class="btn btn-success btn-sm input-submit">Đăng Ký</a>
+                    <div class="alert alert-danger alert-dismissable fade in alert-show">
+                        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                        <strong>Lỗi!</strong>Bạn phải lựa chọn loại thành viên.
+                    </div>
                 </div>
             </form>
         </div>
@@ -111,7 +115,7 @@
             <div class="row">
                 <div class="col-lg-4 col-md-4 col-left-position">
                     <div class="bg-side-img text-center">
-                        <img src="../img/ongVangIcon-no-bg-2.png" alt="">
+                        <!--<img src="../img/ongVangIcon-no-bg-2.png" alt="">-->
                         <div class="text-justify intro-text-sidebar-left">
                             <h4>Tại sao là GiaohangOngVang.vn?</h4>
                             <p>
@@ -133,7 +137,7 @@
                         <h4>TRỞ THÀNH THÀNH VIÊN</h4>
                     </div>
                     <form action="" class="sign-up-form-personal">
-                        <div class="col-md-12 col-sm-12">
+                        <div class="row col-md-12 col-sm-12">
                             <div class="form-group col-md-6 col-sm-6">
                                 <label for="name">Họ Tên</label>
                                 <input type="text" class="form-control input-sm" id="name" placeholder="">
@@ -142,6 +146,8 @@
                                 <label for="email">Email</label>
                                 <input type="email" class="form-control input-sm" id="email" placeholder="">
                             </div>
+                        </div>
+                        <div class="row col-md-12 col-sm-12">
                             <div class="form-group col-md-6 col-sm-6">
                                 <label for="password">Mật khẩu</label>
                                 <input type="text" class="form-control input-sm" id="password" placeholder="">
@@ -150,6 +156,8 @@
                                 <label for="password">Nhập Lại Mật Khẩu</label>
                                 <input type="text" class="form-control input-sm" id="password" placeholder="">
                             </div>
+                        </div>
+                        <div class="row col-md-12 col-sm-12">
                              <div class="form-group col-md-6 col-sm-6">
                                 <label for="mobile">Số Điện Thoại</label>
                                 <input type="text" class="form-control input-sm" id="mobile" placeholder="">
@@ -158,6 +166,8 @@
                                 <label for="address">Địa Chỉ</label>
                                 <input type="text" class="form-control input-sm" id="address" placeholder="">
                             </div>
+                        </div>
+                        <div class="row col-md-12 col-sm-12">
                              <div class="form-group col-md-6 col-sm-6">
                                 <label for="city">Tỉnh/ Thành Phố</label>
                                 <select class="form-control" id="city">
@@ -174,6 +184,8 @@
                                     <option>Quận 2</option>
                                 </select>
                             </div>
+                        </div>
+                        <div class="row col-md-12 col-sm-12">
                             <div class="form-group col-md-6 col-sm-6">
                                 <label for="town">Phường/ Xã</label>
                                 <select class="form-control" id="town">
@@ -185,7 +197,9 @@
                             <div class="form-group col-md-6 col-sm-6">
                                 <label for="account-number">Số Tài Khoản</label>
                                 <input type="text" class="form-control input-sm" id="account-number" placeholder="">
-                            </div>                            
+                            </div>
+                        </div>
+                        <div class="row col-md-12 col-sm-12">
                             <div class="form-group col-md-6 col-sm-6">
                                 <label for="account-owner">Chủ Tài Khoản</label>
                                 <input type="text" class="form-control input-sm" id="account-owner" placeholder="">
@@ -194,6 +208,8 @@
                                 <label for="bank-name">Ngân Hàng</label>
                                 <input type="text" class="form-control input-sm" id="bank-name" placeholder="">
                             </div>
+                        </div>
+                        <div class="row col-md-12 col-sm-12">
                             <div class="form-group col-md-6 col-sm-6">
                                 <label for="DOB">Ngày Sinh</label>
                                 <div class='input-group date' id='datetimepicker1'>
@@ -219,6 +235,8 @@
                                 <label for="email">Mã Số Thuế</label>
                                 <input type="email" class="form-control input-sm" id="tax-code" placeholder="">
                             </div>
+                        </div>
+                        <div class="col-md-12 col-sm-12">
                             <div class="form-group col-md-6 col-sm-6">
                                 <label for="address">Địa Chỉ</label>
                                 <input type="text" class="form-control input-sm" id="address" placeholder="">
@@ -231,6 +249,8 @@
                                     <option>TP. HCM</option>
                                 </select>
                             </div>
+                        </div>
+                        <div class="col-md-12 col-sm-12">
                             <div class="form-group col-md-6 col-sm-6">
                                 <label for="ward">Quận/ Huyện</label>
                                 <select class="form-control" id="ward">
@@ -247,6 +267,8 @@
                                     <option>Phường 2</option>
                                 </select>
                             </div>
+                        </div>
+                        <div class="col-md-12 col-sm-12">
                             <div class="form-group col-md-6 col-sm-6">
                                 <label for="account-number">Người Liên Hệ</label>
                                 <input type="text" class="form-control input-sm" id="contact-person" placeholder="">
@@ -257,10 +279,14 @@
                             </div>
                         </div>
                     </form>
-                    <input type="checkbox" name="agreed" value="">
-                    <span>Tôi đã đọc và đồng ý với <a href="#"><b>điều khoản sử dụng</b></a> của Giaohangongvang.vn</span>
-                    <div class="row text-right">
-                        <a href="#" class="btn btn-primary btn-sm btn-sign-up-edit">Đăng Ký</a>
+                    <div class="row btn-bottom">
+                        <div class="col-md-9 col-sm-9 text-left">
+                            <input type="checkbox" name="agreed" value="" class="agreed-check">
+                            <span>Tôi đã đọc và đồng ý với <a href="../partials/services.html"><b>điều khoản sử dụng</b></a> của Giaohangongvang.vn</span>
+                        </div>
+                        <div class="col-md-3 col-sm-3 text-right">
+                            <a href="#" class="btn btn-primary btn-sm btn-sign-up-edit text-right">Đăng Ký</a>
+                        </div>
                     </div>
                 </div>
                 <div class="col-lg-8 col-md-8 form-msg-done">
@@ -273,7 +299,6 @@
                         <p>Trân trọng cảm ơn!</p>
                     </div>
                     <div class="row text-center">
-                        <a href="../partials/sign-up.html" class="btn btn-primary btn-sm btn-sign-up-edit">Đăng Ký Mới</a>
                         <a href="../index.html" class="btn btn-primary btn-sm btn-sign-up-edit">Trang Chủ</a>
                     </div>
                 </div>
@@ -281,38 +306,18 @@
         </div>
     </section>
 
-    <section class="section-plus"></section>
-    <div class="alert alert-danger alert-dismissable fade in alert-show">
-        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-        <strong>Lỗi!</strong>Bạn phải lựa chọn loại thành viên.
-    </div>
+    <!--<section class="section-plus"></section>-->
     <footer>
         <div class="container">
             <div class="row">
                 <img src="../img/ongVangIcon.png" alt=""><br>
                 <span class="copyright">Copyright &copy; GiaohangOngVang 2016</span>
                 <div class="link-group">
-                    <a href="../index.html" class="link-edit">Trang chủ</a><i class="fa fa-circle circle-edit" aria-hidden="true"></i>
-                    <a href="../partials/services.html" class="link-edit">Dịch vụ</a><i class="fa fa-circle circle-edit" aria-hidden="true"></i>
-                    <a href="../partials/introduction.html" class="link-edit">Giới thiệu</a>
-                </div>
-                <div lass="link-group">
-                    <span>Hotline: <b>091.666.1523</b> -</span>
+                    <p>Số 2, ngõ 426/20 Láng, Đống Đa, Hà Nội</p>
+                     <span>Hotline: <b>091.666.1523</b> -</span>
                     <span>Email: <a href="giaohangongvang@gmail.com"><b>giaohangongvang@gmail.com</b></a></span>
                 </div>
             </div>
-            <!--<div class="row">
-                <div class="col-md-12">
-                    <ul class="list-inline social-buttons">
-                        <li><a href="#"><i class="fa fa-twitter"></i></a>
-                        </li>
-                        <li><a href="#"><i class="fa fa-facebook"></i></a>
-                        </li>
-                        <li><a href="#"><i class="fa fa-linkedin"></i></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>-->
         </div>
     </footer>
 

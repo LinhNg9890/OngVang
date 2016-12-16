@@ -3,6 +3,22 @@
  * Copyright 2013-2016 Linh Nguyen
  * Licensed under  (...)
  */
+@font-face {
+  font-family: Brandon Bold;
+  src: url("../font/BrandonText-Bold.ttf"); }
+
+@font-face {
+  font-family: Brandon Bold Italic;
+  src: url("../font/BrandonText-BoldItalic.ttf"); }
+
+@font-face {
+  font-family: Brandon Regular;
+  src: url("../font/BrandonText-Regular.ttf"); }
+
+@font-face {
+  font-family: Brandon Regular Italic;
+  src: url("../font/BrandonText-RegularItalic.ttf"); }
+
 .container .row .col-left-position {
   padding-right: 0; }
   .container .row .col-left-position .bg-side-img {
@@ -14,9 +30,12 @@
     .container .row .col-left-position .bg-side-img > img {
       margin-top: 100px; }
     .container .row .col-left-position .bg-side-img .intro-text-sidebar-left {
-      font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+      font-family: Brandon Regular;
       color: #fff;
-      padding: 35px; }
+      padding: 35px;
+      padding-top: 10px; }
+      .container .row .col-left-position .bg-side-img .intro-text-sidebar-left > p {
+        font-size: 15px; }
 
 .container .row .form-bg, .container .row .form-msg-done {
   background: #eeeeee;
@@ -25,16 +44,16 @@
   padding-right: 40px; }
   .container .row .form-bg .row-title, .container .row .form-msg-done .row-title {
     padding-left: 40px;
-    padding-top: 50px; }
+    padding-top: 10px; }
   .container .row .form-bg .sign-up-form-personal, .container .row .form-bg .sign-up-form-company, .container .row .form-msg-done .sign-up-form-personal, .container .row .form-msg-done .sign-up-form-company {
     width: 100%;
     position: relative;
-    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+    font-family: Brandon Regular;
     display: none; }
-  .container .row .form-bg > input[name="agreed"], .container .row .form-msg-done > input[name="agreed"] {
+  .container .row .form-bg .btn-bottom .agreed-check, .container .row .form-msg-done .btn-bottom .agreed-check {
     margin-left: 30px; }
-  .container .row .form-bg .btn-sign-up-edit, .container .row .form-msg-done .btn-sign-up-edit {
-    margin-right: 40px; }
+  .container .row .form-bg .btn-bottom .btn-sign-up-edit, .container .row .form-msg-done .btn-bottom .btn-sign-up-edit {
+    margin-right: 30px; }
 
 .container .row .form-msg-done {
   display: none;
@@ -43,11 +62,12 @@
     display: none; }
 
 .sign-up-step2 {
-  padding-top: 30px;
+  padding-top: 10px;
+  padding-bottom: 0px;
   display: none; }
 
 .alert-show {
-  position: absolute;
-  top: 210px;
-  right: 0;
-  display: none; }
+  position: relative;
+  top: 10px;
+  display: none;
+  font-size: 16px; }
